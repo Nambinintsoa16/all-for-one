@@ -14,10 +14,10 @@ $date=$dt->format("Y-m-d");
             </div>
         </div>
         </div>
-        <div class="row wow fadeInUp">
+        <div class="row" style="margin-top:-16px">
             <div class="col-md-12">
             <img src="../img/banniere.jpg" alt="" height="400px" width="100%"
-                style="object-fit: cover;top:-2Opx !important">
+                style="object-fit: cover;top:-16px !important">
 
             </div>
            
@@ -170,7 +170,7 @@ $date=$dt->format("Y-m-d");
         </div>
 
         
-        <div class="row" style="margin-top:10px;">
+        <div class="row" style="margin-top:30px;">
             <div class="col-lg-12">
                 <ol class="breadcrumb">
                     <li><i class="fa fa-truck"></i><a href="index.html">Etat de Livraison</a></li>
@@ -189,8 +189,8 @@ if(isset($nbfacture)){
 if($nbfacture==0){$nbfactureAtt=0;}else{$nbfactureAtt=($nbfactureAtt*100)/$nbfacture;}
 }else{$nbfactureAtt=0;}
 ?>                        
-<div class="row" style="margin-right:0px;margin-left:0px;color:#fff">
-            <div class="col-md-4">
+<div class="row" style="margin-right:-15px;margin-left:-15px;color:#fff">
+            <div class="col-md-4" style="margin-top:-15px">
                 <div class="row" style="margin-right:0px;margin-left:0px;border:solid 5px #fff">
                     <div class="col-md-4" style="background:#34495e;min-height:120px;">
                         <canvas style="width:100%;height: 115px;" id="att">
@@ -199,7 +199,7 @@ if($nbfacture==0){$nbfactureAtt=0;}else{$nbfactureAtt=($nbfactureAtt*100)/$nbfac
                     </div>
                     <div class="col-md-8" style="background:#34495e;min-height:120px;">
                         <div style="padding-top:10px">
-                            <span>Livré</span><br>
+                            <span>Livraison</span><br>
                             <span style="font-size:30px"><?php echo $nbfactureAtt;?>%</span><br>
                 <div class="progress thin" style="background-color: #91b5cd;height:2px;margin-top: 10px!important;">
                     <div class="progress-bar" role="progressbar" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100" style="width:<?php echo $nbfactureAtt."%";?>;background-color:#fff;">
@@ -222,7 +222,7 @@ $sql="SELECT `NumFact` FROM `facture` WHERE `Statut` LIKE 'livre' AND `datelivre
  }else{$nbfacturelivre=0; }
  if(isset($nbfacture)){if ($nbfacture==0){$Ptlivre=0;}else{$Ptlivre=($nbfacturelivre*100)/$nbfacture;} }else{ $Ptlivre=0; }
  ?>
-            <div class="col-md-4">
+            <div class="col-md-4" style="margin-top:-15px">
                 <div class="row" style="margin-right:0px;margin-left:0px;border:solid 5px #fff">
                     <div class="col-md-4" style="background:#236d9e;min-height:120px;">
                     <canvas style="width:100%;height: 115px;" id="livre">
@@ -252,7 +252,7 @@ if($facturedoublea){
 foreach ($facturedoublea as $facturedoublea){$facturetabAnnule[]=$facturedoublea['NumFact'];} $factureannule=array_unique($facturetabAnnule); $nbannule=count($factureannule);
 }else{$nbannule=0; }
  if(isset($nbfacture)){if($nbfacture==0){$annule=0;}else{ $annule=($nbannule*100)/$nbfacture;}}else{$annule=0;}  ?>                           
-            <div class="col-md-4">
+            <div class="col-md-4" style="margin-top:-15px">
                 <div class="row" style="margin-right:0px;margin-left:0px;border:solid 5px #fff"">
                     <div class="col-md-4" style="background:#c0062b;min-height:120px;">
                     <canvas style="width:100%;height: 115px;" id="Annul">
@@ -262,7 +262,7 @@ foreach ($facturedoublea as $facturedoublea){$facturetabAnnule[]=$facturedoublea
 
                     <div class="col-md-8" style="background:#e30832;min-height:120px;">
                     <div style="padding-top:10px">
-                      <span>Livré</span><br>
+                      <span>Annulée</span><br>
                       <span style="font-size:30px"><?php echo $annule;?>%</span><br>
                       <div class="progress thin" style="background-color:#e08396;height: 1px;color: white;margin-top: 10px!important;">
                 <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="93" aria-valuemin="0"  aria-valuemax="100" style="position: absolute;margin-top: -20px;width:<?php echo $annule."%";?>;background-color:#fff;">    
