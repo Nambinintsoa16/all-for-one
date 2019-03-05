@@ -90,8 +90,8 @@ $matricule=$main->fetchAll($sql);
     </div></div>
 <script type="text/javascript">
 $(document).ready(function(){
- 
-    $('.lien').on('click',function(event){
+
+   $('.lien').on('click',function(event){
         event.preventDefault();
        $.post($(this).attr('href'),function(data){
           $('.msg_history').empty().append(data);
@@ -106,19 +106,21 @@ $(document).ready(function(){
             $.get('fonction/fonctionmessage.php',{envoy:envoy},function(data){
                   $('.msg_history').empty().append(data);
                   $('.write_msg').val(" ");
-          $('.msg_history').animate({scrollTop: $('.msg_history').get(0).scrollHeight}, 1000); 
+          $('.msg_history').animate({scrollTop: $('.msg_history').get(0).scrollHeight}, 2000); 
            }); 
       });
 
   });
- setInterval(message,6000);
+ setInterval(message,2000);
   function message(envoy){
     var envoy=$('.user').html();
      $.get('fonction/fonctionmessage.php',{envoy:envoy},function(data){
             $('.msg_history').empty().append(data);
-             
+           
         }); 
   }
+
+
 
 
 });

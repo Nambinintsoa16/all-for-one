@@ -53,7 +53,23 @@ if (!isset($_SESSION['login'])){
 
                 <ul class="nav pull-right top-menu">
                     
- 
+                
+
+                <li id="alert_notificatoin_bar" class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <i class="icon-envelope-l"></i>
+                            <span class="badge bg-important"></span>
+                        </a>
+                        <ul class="dropdown-menu extended notification relancedrop">
+                            <div class="notify-arrow notify-arrow-blue"></div>
+                            <li>
+                                <p>Vous aviez <span></span>Message</p>
+                            </li>
+                            <li>
+                                <a href="?page=message">Voir tous</a>
+                            </li>
+                        </ul>
+                    </li>
                     <li id="alert_notificatoin_bar" class="dropdown">
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <i class="orange icon-envelope-l"></i>
