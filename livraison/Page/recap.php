@@ -17,7 +17,7 @@ $date=$dt->format("Y-m-d");
         <div class="row" >
             <div class="col-md-12" >
                 <img src="../img/banniere-livraison.jpg" alt="" width="100%" height="400px"
-                    style="object-fit: cover;margin-top:-16px; !important;overflow: hidden;">
+                    style="object-fit: cover;margin-top:-16px !important;overflow: hidden;">
             </div>
         </div>
 
@@ -119,17 +119,12 @@ $date=$dt->format("Y-m-d");
                     <div style="background-color:#fff;min-height:80px;color:#000;margin-top:-40px">
 
                         <div style="text-align:right;padding-top:5px;padding-right:10px">
-                            <?PHP
-                  $sql="SELECT `id` FROM `client`";
-                  $countClient=$main->test($sql);
-                  echo  $countClient;
-
-               ?>
+                            
                         </div>
                         <div class="count" style="text-align:right;padding-right:10px;font-size:16px;font-weight:bold;">
                             Commande</div>
                         <div
-                            style="height:20px;background:#8fc229;margin-top:15px;padding-top:px;text-align:center;color:white">
+                            style="height:20px;background:#8fc229;margin-top:15px;margin-top:32px;text-align:center;color:white">
                             Plus d'info &nbsp; <i class="fa fa-arrow-circle-right"></i></div>
                     </div>
                     <!--/.info-box-->
@@ -147,14 +142,9 @@ $date=$dt->format("Y-m-d");
                     <div style="background-color:#fff;min-height:80px;color:#000;margin-top:-40px">
 
                         <div style="text-align:right;padding-top:5px;padding-right:10px">
-                            <?PHP
-                  $sql="SELECT `id` FROM `client`";
-                  $countClient=$main->test($sql);
-                  echo  $countClient;
-
-               ?>
+                            
                         </div>
-                        <div class="count" style="text-align:right;padding-right:10px;font-size:16px;font-weight:bold;">
+                        <div class="count" style="text-align:right;padding-right:10px;font-size:16px;margin-top:20px;font-weight:bold;">
                             Calendrier</div>
                         <div
                             style="height:20px;background:#e1321d;margin-top:15px;padding-top:px;text-align:center;color:white">
@@ -177,14 +167,9 @@ $date=$dt->format("Y-m-d");
                     <div style="background-color:#fff;min-height:80px;color:#000;margin-top:-40px">
 
                         <div style="text-align:right;padding-top:5px;padding-right:10px">
-                            <?PHP
-                  $sql="SELECT `id` FROM `client`";
-                  $countClient=$main->test($sql);
-                  echo  $countClient;
-
-               ?>
+                           
                         </div>
-                        <div class="count" style="text-align:right;padding-right:10px;font-size:16px;font-weight:bold;">
+                        <div class="count" style="text-align:right;padding-right:10px;font-size:16px;margin-top:20px;font-weight:bold;">
                             Autre</div>
                         <div
                             style="height:20px;background:#12648a;margin-top:15px;padding-top:px;text-align:center;color:white">

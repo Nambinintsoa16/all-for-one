@@ -171,9 +171,6 @@ if (!isset($_SESSION['login'])){
 
                     </li>
 
-
-
-
                 </ul>
 
             </div>

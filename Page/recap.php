@@ -117,14 +117,11 @@ $date=$dt->format("Y-m-d");
                     <div class="" style="background:#8fc229;min-height:95px;color:white;margin-top:-25px">
                         <div class="count" style="text-align:center;padding-top:20px;font-size:18px">Comande</div>
                         <div style="text-align:center;font-size:18px">
-                            <?PHP
-                            $sql="SELECT `id` FROM `client`";
-                            $countClient=$main->test($sql);
-                            echo  $countClient;
+                            
 
-                        ?>
+                     
                         </div>
-                        <div style="height:30px;background:#78a125;margin-top:5px;padding-top:6px;text-align:center">
+                        <div style="height:30px;background:#78a125;margin-top:30px;padding-top:6px;text-align:center">
                             Plus d'info &nbsp; <i class="fa fa-arrow-circle-right"></i></div>
 
                     </div>
