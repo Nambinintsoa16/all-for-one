@@ -29,6 +29,7 @@ if (!isset($_SESSION['login'])){
     <link rel='stylesheet' type='text/css' href='../css/fullcalendar.css' />
     <link rel='stylesheet' type='text/css' href='../css/fullcalendar.print.css' media='print' />
     <link rel='stylesheet' type='text/css' href='../css/theme.css'>
+      <link rel='stylesheet' type='text/css' href='../css/styles.css'>
     <link href="../css/bootstrap-theme.css" rel="stylesheet">
     <link href="../css/elegant-icons-style.css" rel="stylesheet" />
     <link href="../css/font-awesome.min.css" rel="stylesheet" />
