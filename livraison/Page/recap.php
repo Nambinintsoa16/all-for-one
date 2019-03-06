@@ -118,13 +118,13 @@ $date=$dt->format("Y-m-d");
                     </div>
                     <div style="background-color:#fff;min-height:80px;color:#000;margin-top:-40px">
 
-                        <div style="text-align:right;padding-top:5px;padding-right:10px">
+                        <div style="text-align:right;padding-top:15px;padding-right:10px">
                             
                         </div>
-                        <div class="count" style="text-align:right;padding-right:10px;font-size:16px;font-weight:bold;">
+                        <div class="count" style="text-align:right;padding-right:10px;font-size:16px;font-weight:bold;padding-top: 10px">
                             Commande</div>
                         <div
-                            style="height:20px;background:#8fc229;margin-top:15px;margin-top:32px;text-align:center;color:white">
+                            style="height:20px;background:#8fc229;margin-top:13px;text-align:center;color:white">
                             Plus d'info &nbsp; <i class="fa fa-arrow-circle-right"></i></div>
                     </div>
                     <!--/.info-box-->
