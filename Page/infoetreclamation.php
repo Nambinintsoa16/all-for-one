@@ -58,15 +58,17 @@ $date=$dt->format('Y-m-d');
          </div>
       </div>
  <div class="produitcont">
-<fieldset> <legend>Produit</legend>
-       <div class="col-lg-10">
-            <div class="row">
-                <div class="col-lg-7">
+<fieldset> 
+       <div class="form-group col-lg-12">
+            <div class="row" style="padding:30px 30px">
+                <div class="col-lg-10">
+                <legend>Produit</legend>
                   <input type="text" class="form-control cherche produit select-client" id="client" style="width: 350px;" placeholder="Produit">
                 </div>
-                <div class="col-lg-4" style="text-align: right;">
+                <div class="col-lg-2" style="">
+                <legend>Photo Produit</legend> 
                   <div class="imageproduit img-thumbnail" style="width: 150px;height: 150px;text-align:center;padding: auto auto;">
-                    <h5 style="margin-top:45%; ">Photo Produit</h5> 
+                    
                   </div>
                   <span class="idProduit"></span>
                 </div>
@@ -95,8 +97,6 @@ $date=$dt->format('Y-m-d');
                 </div>
                  
             </div>
-      
-      
       </div>
 </fieldset>
 

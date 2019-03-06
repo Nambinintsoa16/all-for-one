@@ -41,7 +41,7 @@ if (!isset($_SESSION['login'])){
 
 <body>
     <section id="container" class="">
-        <header class="header " style="background:#fff;border-bottom:white 1px solid;z-index:1">
+        <header class="header " style="background:#fff;border-bottom:white 1px solid;z-index:1;box-shadow:0px 2px #ddd">
             <div
                 style="position:absolute;width:35px;height:35px;border-radius:50%;background:white;z-index:123;margin-top:13px;padding-top:2px;padding-left:2px;">
                 <img src="../img/logo.png" width="30" alt="">
@@ -149,7 +149,7 @@ if (!isset($_SESSION['login'])){
         <aside>
 
             <div id="sidebar" class="nav-collapse "
-                style="background-color:red;margin-top:-60px; background-image:url('../img/banniere-livraisonred.png');background-size:cover;z-index:333;min-height:1500px;">
+                style="margin-top:-60px; background-image:url('../img/banniere-livraisonred.png');background-size:cover;z-index:333;min-height:1500px;">
 
                 <ul class="sidebar-menu" style="color:#fff;z-index:234">
                     <div style="z-index:3456;background:#fff;width:100%;height:180px">

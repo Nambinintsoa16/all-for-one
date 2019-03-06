@@ -14,15 +14,15 @@ $date=$dt->format('Y-m-d');
             </ol>
           </div>
         </div>
- <div class="col-lg-12">
- <section class="panel">
+ <div class="col-lg-12" style="padding-right:0px !important" >
+ <section class="panel" >
   <div class="panel-heading"></div>
   <div class="panel-body">
     
     <form>
     
       <div class="form-group">
-        <div class="col-md-12">
+        <div class="col-md-12" >
           <div class="col-md-4">
             <fieldset><legend>Date</legend>
             <div class="col-md-12">
@@ -58,15 +58,17 @@ $date=$dt->format('Y-m-d');
          </div>
       </div>
  <div class="produitcont">
-<fieldset> <legend>Produit</legend>
-       <div class="col-lg-10">
-            <div class="row">
-                <div class="col-lg-7">
+ <fieldset> 
+       <div class="form-group col-lg-12">
+            <div class="row" style="padding:30px 30px">
+                <div class="col-lg-10">
+                <legend>Produit</legend>
                   <input type="text" class="form-control cherche produit select-client" id="client" style="width: 350px;" placeholder="Produit">
                 </div>
-                <div class="col-lg-4" style="text-align: right;">
+                <div class="col-lg-2" style="">
+                <legend>Photo Produit</legend> 
                   <div class="imageproduit img-thumbnail" style="width: 150px;height: 150px;text-align:center;padding: auto auto;">
-                    <h5 style="margin-top:45%; ">Photo Produit</h5> 
+                    
                   </div>
                   <span class="idProduit"></span>
                 </div>
@@ -78,28 +80,27 @@ $date=$dt->format('Y-m-d');
 
 
 
-<fieldset class="class="border p-2""><legend>Client</legend>
+<fieldset class="border p-2">
       <div class="form-group col-md-12">
-       
-           <div class="col-lg-10">
-            <div class="row">
-                <div class="col-lg-7">
-                  <input type="text" class="form-control cherche client select-client" id="client" style="width: 350px;" placeholder="Client">
-                </div>
-                <div class="col-lg-4" style="text-align: right;">
-                  <div class="image img-thumbnail" style="width: 150px;height: 150px;text-align:center;padding: auto auto;">
+      <div class="row" style="padding:30px 30px">
+          <div class="form-group col-lg-10">
+            <legend>Client</legend>  
+          
+            <input type="text" class="form-control cherche client select-client col-md-12" id="client"  placeholder="Client">
+          </div>
+          <div class="form-group col-lg-2" style="">
+          <legend>Photo Client</legend>  
+                  <div class="image img-thumbnail col-md-12" style="width: 150px;height: 150px;text-align:center;padding: auto auto;">
                     <h5 style="margin-top:45%; ">Photo client</h5> 
                   </div>
                   <span class="idclient"></span>
                 </div>
                  
             </div>
-        </div>
-      
       </div>
 </fieldset>
 
-<fieldset class="class="border p-2""><legend>Commentaire</legend>
+<fieldset class="border p-2"><legend>Commentaire</legend>
       
       <div class="form-group">
         <textarea class="form-control remarque" style="resize:none;"></textarea>
